@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: none; /* se ajusta automáticamente */
+  max-height: none;
   overflow: visible;
   padding-right: 6px;
 }
@@ -92,7 +92,7 @@
   margin-top: 4px;
 }
 
-/* Played state: grayscale + dim */
+/* Played state */
 .game-card.played {
   filter: grayscale(100%) brightness(.55);
   opacity: 0.6;
