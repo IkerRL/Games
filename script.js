@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+
+.valorant-panel {
+  width: 420px;
+  padding: 18px;
+  background: rgba(15, 0, 25, 0.90);
+  border: 2px solid #8b5cf6;
+  clip-path: polygon(0 0, 96% 0, 100% 15%, 100% 100%, 4% 100%, 0 85%);
+  box-shadow: 0 0 25px rgba(160, 50, 255, 0.35);
+  font-family: "Rajdhani", sans-serif;
+  color: #e6e6e6;
+  text-transform: uppercase;
+}
+
+/* Title */
+.panel-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #c084fc;
+  text-shadow: 0 0 8px rgba(180,0,255,0.45);
+  letter-spacing: 1px;
+}
+
+/* List: ajustada para mostrar todos los juegos sin scroll */
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: none; /* se ajusta automáticamente */
+  overflow: visible;
+  padding-right: 6px;
+}
+
+/* Card */
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(60,0,90,0.35), rgba(40,0,70,0.35));
+  border-left: 4px solid rgba(183,109,255,0.9);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .3s ease, filter .3s ease;
+  user-select: none;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(110,40,255,0.12);
+}
+
+/* Logo */
+.game-logo {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border-radius: 8px;
+  background: #222;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.game-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter .35s ease, opacity .35s ease;
+}
+
+/* Info */
+.game-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.game-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(120,50,255,0.18);
+}
+
+.game-sub {
+  font-size: 12px;
+  color: #d8c9ff;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Played state: grayscale + dim */
+.game-card.played {
+  filter: grayscale(100%) brightness(.55);
+  opacity: 0.6;
+  border-left-color: rgba(130,130,130,0.5);
+}
+
+/* small played badge */
+.game-card .played-badge {
+  font-size: 11px;
+  padding: 4px 6px;
+  background: rgba(255,255,255,0.06);
+  color: #ddd;
+  border-radius: 6px;
+  margin-left: 8px;
+  align-self: flex-start;
+}
+
+/* footer note */
+.panel-foot {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #b7a6ff;
+  text-align: right;
+  opacity: 0.9;
+}
