@@ -1,8 +1,3 @@
-/* === CONFIG: lista de juegos y logos ===
-   Si quieres usar un logo real, reemplaza logo:'' por la URL de la imagen.
-   Si dejas logo:'' se generará un placeholder SVG con la inicial.
-*/
-
 const gamesData = [
   { id: 'valorant',    name: 'Valorant',         logo: 'https://pbs.twimg.com/profile_images/1271880138507145216/jEx4bMW0_400x400.png' },
   { id: 'repo',        name: 'R.E.P.O',          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_F0HJlREbbCJy4wtWi0Yz0qWawUz1fpVJg&s' },
@@ -45,29 +40,22 @@ function renderGames() {
     logoWrap.className = 'game-logo';
     const img = document.createElement('img');
     img.alt = g.name + ' logo';
-    if (g.logo) img.src = g.logo;
-    else {
-      const initials = g.name.split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase();
-      img.src = svgPlaceholder(initials, bgPool[idx % bgPool.length]);
-    }
+    img.src = g.logo || svgPlaceholder(g.name.slice(0,2).toUpperCase(), bgPool[idx % bgPool.length]);
     logoWrap.appendChild(img);
 
     const info = document.createElement('div');
     info.className = 'game-info';
-    const name = document.createElement('div');
-    name.className = 'game-name';
-    name.textContent = g.name;
-    const sub = document.createElement('div');
-    sub.className = 'game-sub';
-    sub.textContent = saved[g.id] ? 'Jugado' : 'Pendiente';
-    info.appendChild(name); info.appendChild(sub);
+    info.innerHTML = `<div class="game-name">${g.name}</div>
+                      <div class="game-sub">${saved[g.id] ? 'Jugado' : 'Pendiente'}</div>`;
+    card.appendChild(logoWrap);
+    card.appendChild(info);
 
-    card.appendChild(logoWrap); card.appendChild(info);
-
-    const badge = document.createElement('div');
-    badge.className = 'played-badge';
-    badge.textContent = saved[g.id] ? 'JUGADO' : '';
-    if (saved[g.id]) card.appendChild(badge);
+    if (saved[g.id]) {
+      const badge = document.createElement('div');
+      badge.className = 'played-badge';
+      badge.textContent = 'JUGADO';
+      card.appendChild(badge);
+    }
 
     card.addEventListener('click', () => {
       saved[g.id] = !saved[g.id];
@@ -86,5 +74,4 @@ function renderGames() {
   });
 }
 
-// render inicial
 renderGames();
