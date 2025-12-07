@@ -10,6 +10,7 @@ const gamesData = [
   { id: 'Skribbl',name: 'Skribbl',   logo: 'https://imgmediagumlet.lbb.in/media/2020/05/5eb9149cdda0dc33a2fde6bc_1589187740390.jpg' },
   { id: 'fallguys',    name: 'Fall Guys',        logo: 'https://fallguys-db.pages.dev/static/logo.png' },
   { id: 'Gang Beasts', name: 'Gang Beasts', logo: 'https://acdn-us.mitiendanube.com/stores/001/034/003/products/gang-beasts-eec794cd36060dabc917497319649174-480-0.webp' }
+  { id: 'Miedo', name: 'Dark Pictures', logo: 'https://www.thedarkpictures.com/media/tcidbjuj/logo-tdp-skull-200w.png' }
 ];
 
 const STORAGE_KEY = 'valorant_games_played_v2';
