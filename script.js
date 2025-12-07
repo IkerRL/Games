@@ -2,15 +2,15 @@ const gamesData = [
   { id: 'valorant',    name: 'Valorant',         logo: 'https://pbs.twimg.com/profile_images/1271880138507145216/jEx4bMW0_400x400.png' },
   { id: 'repo',        name: 'R.E.P.O',          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_F0HJlREbbCJy4wtWi0Yz0qWawUz1fpVJg&s' },
   { id: 'fortnite',    name: 'Fortnite',         logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png' },
-  { id: 'cs',     name: 'Cs',          logo: 'https://gaming-cdn.com/images/products/13664/orig/counter-strike-2-pc-juego-steam-cover.jpg?v=1695885435' },
+  { id: 'cs',          name: 'Cs',               logo: 'https://gaming-cdn.com/images/products/13664/orig/counter-strike-2-pc-juego-steam-cover.jpg?v=1695885435' },
   { id: 'amongus',     name: 'Among Us',         logo: 'https://logos-world.net/wp-content/uploads/2021/08/Among-Us-Logo.png' },
   { id: 'makeitmeme',  name: 'Make it Meme',     logo: 'https://colyseus.io/_astro/make-it-meme-logo.5c9b2cf4_iBIWc.webp' },
   { id: 'lethal',      name: 'Lethal Company',   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuNUS1gkuSPWWWM2S-YoIsRifDASykH4HPQ&s' },
   { id: 'spiderman2',  name: 'SpiderMan 2',      logo: 'https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png' },
-  { id: 'Skribbl',name: 'Skribbl',   logo: 'https://imgmediagumlet.lbb.in/media/2020/05/5eb9149cdda0dc33a2fde6bc_1589187740390.jpg' },
+  { id: 'Skribbl',     name: 'Skribbl',          logo: 'https://imgmediagumlet.lbb.in/media/2020/05/5eb9149cdda0dc33a2fde6bc_1589187740390.jpg' },
   { id: 'fallguys',    name: 'Fall Guys',        logo: 'https://fallguys-db.pages.dev/static/logo.png' },
-  { id: 'Gang Beasts', name: 'Gang Beasts', logo: 'https://acdn-us.mitiendanube.com/stores/001/034/003/products/gang-beasts-eec794cd36060dabc917497319649174-480-0.webp' }
-  { id: 'Miedo', name: 'Dark Pictures', logo: 'https://www.thedarkpictures.com/media/tcidbjuj/logo-tdp-skull-200w.png' }
+  { id: 'Gang Beasts', name: 'Gang Beasts',      logo: 'https://acdn-us.mitiendanube.com/stores/001/034/003/products/gang-beasts-eec794cd36060dabc917497319649174-480-0.webp' },
+  { id: 'Miedo',       name: 'Dark Pictures',    logo: 'https://www.thedarkpictures.com/media/tcidbjuj/logo-tdp-skull-200w.png' }
 ];
 
 const STORAGE_KEY = 'valorant_games_played_v2';
