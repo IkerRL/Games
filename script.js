@@ -7,9 +7,9 @@ const gamesData = [
   { id: 'makeitmeme',  name: 'Make it Meme',     logo: 'https://colyseus.io/_astro/make-it-meme-logo.5c9b2cf4_iBIWc.webp' },
   { id: 'lethal',      name: 'Lethal Company',   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuNUS1gkuSPWWWM2S-YoIsRifDASykH4HPQ&s' },
   { id: 'spiderman2',  name: 'SpiderMan 2',      logo: 'https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png' },
-  { id: 'pito',name: 'pito',   logo: 'https://i.etsystatic.com/52589012/r/il/7b3dc3/6436313288/il_fullxfull.6436313288_rdf4.jpg' },
+  { id: 'Skribbl',name: 'Skribbl',   logo: 'https://imgmediagumlet.lbb.in/media/2020/05/5eb9149cdda0dc33a2fde6bc_1589187740390.jpg' },
   { id: 'fallguys',    name: 'Fall Guys',        logo: 'https://fallguys-db.pages.dev/static/logo.png' },
-  { id: 'supermarket', name: 'Supermarket Together', logo: 'https://cdn2.steamgriddb.com/icon/d66d0d00bb7f294c9a9127f437dd3702.ico' }
+  { id: 'Gang Beasts', name: 'Gang Beasts', logo: 'https://acdn-us.mitiendanube.com/stores/001/034/003/products/gang-beasts-eec794cd36060dabc917497319649174-480-0.webp' }
 ];
 
 const STORAGE_KEY = 'valorant_games_played_v2';
